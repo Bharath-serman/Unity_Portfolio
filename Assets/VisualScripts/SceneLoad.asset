@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SceneLoad
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Scene-Transition","summary":null,"pan":{"x":508.8416,"y":98.1414},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-268.0,"y":117.0},"guid":"cce4aa21-990b-4e38-958c-41ff42333ea2","$version":"A","$type":"Unity.VisualScripting.Update"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-46.0,"y":102.0},"guid":"a948e75e-89cc-466e-9a82-98c335ae29af","$version":"A","$type":"Unity.VisualScripting.OnButtonClick","$id":"11"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Button","$type":"System.String"},"object":null},"position":{"x":-150.0,"y":-37.0},"guid":"52dd1bfe-ad1f-4a91-8321-76430efab5a0","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"13"},{"chainable":false,"parameterNames":["sceneName"],"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"Site","$type":"System.String"}},"position":{"x":458.0,"y":66.0},"guid":"1a6678bc-04ab-4176-9d7a-f0d9f90a8364","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"chainable":false,"parameterNames":["message"],"member":{"name":"Log","parameterTypes":["System.Object"],"targetType":"UnityEngine.Debug","targetTypeName":"UnityEngine.Debug","$version":"A"},"defaultValues":{},"position":{"x":244.0,"y":62.0},"guid":"fdd41473-6ad6-46f3-a474-230147be4aea","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"19"},{"type":"System.String","value":{"$content":"Enter
+      Scene Name","$type":"System.String"},"defaultValues":{},"position":{"x":234.0,"y":237.0},"guid":"b9645278-b618-4c7c-b70e-a9864b9233d4","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"23"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"8399af3f-513b-4f38-aca3-fe99c28e9459","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"973c40c9-2ec9-4fe8-8be3-0b4521099bc3","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"c2c74813-4fbb-4048-96c9-a1b834c00240","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"output","destinationUnit":{"$ref":"19"},"destinationKey":"%message","guid":"7474ca45-c4f9-4f8e-9995-502ddc89bbb2","$type":"Unity.VisualScripting.ValueConnection"},{"position":{"xMin":36.0,"yMin":-77.0,"xMax":136.0,"yMax":23.0},"title":"Scene
+      Transition","body":null,"colorTheme":"Classic","guid":"da6d119e-4778-4d33-bb75-a0b5b90b53c4","$type":"Unity.VisualScripting.StickyNote"}],"$version":"A"}}'
+    _objectReferences: []
