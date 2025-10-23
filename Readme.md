@@ -2,6 +2,7 @@
 
 This is my personal **3D URP (Universal Render Pipeline)** portfolio project built with **Unity 2022.3.x**.  
 It showcases my skills in **lighting, environment design, interactivity, and post-processing**.
+AND THIS IS STILL IN DEVELOPMENT.
 
 ---
 
@@ -35,7 +36,9 @@ It showcases my skills in **lighting, environment design, interactivity, and pos
 
 ## Screenshots
 Example:  
-![Portfolio Scene](./Screenshots/portfolio_scene.png)
+![Home Scene]<img width="1361" height="590" alt="Home" src="https://github.com/user-attachments/assets/f3cefabb-1e69-4d0b-95c2-04470cf40a8c" />
+![Portfolio Scene]<img width="1366" height="591" alt="Initial" src="https://github.com/user-attachments/assets/96308887-9a5a-4d60-86f5-375e5e095954" />
+
 
 ---
 
@@ -43,6 +46,7 @@ Example:
 This project helped me improve my skills in:
 - Unity Lighting and URP optimization  
 - Level design and environmental storytelling  
+
 - Basic C# scripting and UI design  
 
 ---
