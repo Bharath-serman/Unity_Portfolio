@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.Audio;
 
 public class Grenade : MonoBehaviour
 {
@@ -13,6 +11,8 @@ public class Grenade : MonoBehaviour
     public GameObject effect;
     float radius = 1f;
     public float force = 300f;
+
+    public AudioSource audiosource;
 
     void Start()
     {
@@ -39,6 +39,7 @@ public class Grenade : MonoBehaviour
         Debug.LogError("Boom!");
         //add effect
         Instantiate(effect, transform.position, transform.rotation);
+        audiosource.Play();
 
         //get nearby objects
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);

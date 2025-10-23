@@ -12,7 +12,7 @@ public class Pause_Menu : MonoBehaviour
     public Button teleportbutton;
     public Button quitbutton;
     [Header("UI_Images")]
-    public Image PauseImage; //Assign the Menu / Panel.
+    public GameObject PauseImage; //Assign the Menu / Panel.
     public GameObject Dropdownimage;
     [Header("UI_GameObject")]
     public GameObject Panel;
@@ -85,6 +85,15 @@ public class Pause_Menu : MonoBehaviour
     public void quit()
     {
         //Close the application.
+        Debug.Log("Quitted");
         Application.Quit();
+    }
+
+    public void RemoveEverything()
+    {
+        PauseImage.SetActive(false);
+        Dropdownimage.SetActive(false);
+        //Resume the game.
+        Time.timeScale = 1f;
     }
 }
