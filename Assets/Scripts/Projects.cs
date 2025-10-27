@@ -9,6 +9,7 @@ public class Projects : MonoBehaviour
     public Button project3;  //VR Black_Hole.
     public Button project4;  //Cassiora.
     public Button project5;  //Drive_Link.
+    public Button TravelPlannerButton;  //Travel_Planner.
 
     public void navigate1()
     {
@@ -39,5 +40,11 @@ public class Projects : MonoBehaviour
     {
         Application.OpenURL("https://drive.google.com/drive/folders/1vaEnhpUqaJqcC7a07x_cpO9LhhJ3VcbF?usp=sharing");
         Debug.Log("Opened URL-5");
+    }
+
+    public void navigate6()
+    {
+        Application.OpenURL("https://travelplanner.chennaimetrorail.org/");
+        Debug.Log("Opened URL-6");
     }
 }

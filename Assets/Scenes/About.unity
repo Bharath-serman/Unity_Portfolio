@@ -2595,6 +2595,8 @@ MonoBehaviour:
   BioPanel: {fileID: 1042903952}
   director: {fileID: 857320177}
   AccessDeniedButton: {fileID: 2058465061}
+  ExperiencePanels: {fileID: 0}
+  closePanelbutton: {fileID: 0}
 --- !u!4 &951787182
 Transform:
   m_ObjectHideFlags: 0
@@ -8275,7 +8277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I was a student
+  m_text: I am a student
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

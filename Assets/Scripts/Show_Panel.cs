@@ -17,6 +17,7 @@ public class Show_Panel : MonoBehaviour
     {
         BioPanel.SetActive(false);
         director.stopped += OnTimelineStopped;
+        //ExperiencePanels.SetActive(PanelStatus); 
     }
 
     void OnTimelineStopped(PlayableDirector pd)
