@@ -5,19 +5,21 @@ using UnityEngine.UI;
 public class Pause_Menu : MonoBehaviour
 {
     [Header("UI_Buttons")]
-    public Button PauseButton; //Assign the pause button.
+    public Button PauseButton; 
     public Button closebutton; //Quit/Close Button.
     public Button dropdownbutton;
     public Button resumebutton;
     public Button teleportbutton;
     public Button quitbutton;
     [Header("UI_Images")]
-    public GameObject PauseImage; //Assign the Menu / Panel.
+    public GameObject PauseImage;
     public GameObject Dropdownimage;
     [Header("UI_GameObject")]
     public GameObject Panel;
 
     private bool isActive = true;
+    private bool Ispressed = true;  //For Pause Window
+    private bool ActivePanel = false;
 
     private void Start()
     {
@@ -64,15 +66,30 @@ public class Pause_Menu : MonoBehaviour
 
     public void showchoices()
     {
-        Panel.SetActive(true);
-    }
+        if (ActivePanel == false)
+        {
+            Panel.SetActive(true);  //True.
+            ActivePanel = true;  //True.
+        }
+        else if (ActivePanel == true)
+        {
+            Panel.SetActive(false);
+            ActivePanel = false;
+        }
 
+    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && Ispressed)
         {
+            Ispressed = !Ispressed;  //False.
             ShowMenu();
             Time.timeScale = 0f;  //Freeze the game once it is paused.
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && !Ispressed)
+        {
+            RemoveEverything();
+            Ispressed = true;
         }
     }
 
