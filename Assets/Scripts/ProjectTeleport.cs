@@ -1,17 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ProjectTeleport : MonoBehaviour
 {
     [Header("Project Teleport Customization")]
     public GameObject projectbutton; //Get the button
     public GameObject ExitProjectButton;
-
+    public GameObject AboutInButton;
     public enum teleportType { Entering , Exiting };
     public teleportType type;
-
     public Pause_Menu menus;
-
     //public Camera cam;
     [Header("Teleportation Settings")]
     public Transform player;
@@ -165,5 +164,13 @@ public class ProjectTeleport : MonoBehaviour
     void exitDisappear()
     {
         ExitProjectButton.SetActive(false);
+    }
+
+    public void LoadAboutScene()
+    {
+        menus.RemoveEverything();
+        AboutInButton.SetActive(false);
+        SceneManager.LoadScene("About");
+        Debug.Log("The Scene Loaded");
     }
 }

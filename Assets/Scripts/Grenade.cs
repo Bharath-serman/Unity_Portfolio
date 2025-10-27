@@ -10,6 +10,7 @@ public class Grenade : MonoBehaviour
     float countdown;
     public GameObject effect;
     float radius = 1f;
+    [Range(0f,600f)]
     public float force = 300f;
 
     public AudioSource audiosource;

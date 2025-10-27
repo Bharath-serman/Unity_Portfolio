@@ -15,7 +15,6 @@ public class StartDialogue : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 ConversationManager.Instance.StartConversation(myconversation);
-              
             }
         }     
     }
