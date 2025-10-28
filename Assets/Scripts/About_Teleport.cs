@@ -7,8 +7,11 @@ public class About_Teleport : MonoBehaviour
     [Header("Button Settings")]
     public GameObject AboutInButtons;
     private bool isactive = false;
+    public Animator animator;
+    public float fadeDuration = 2f;
     public void Start()
-    {   
+    {
+         animator.enabled = false;
          AboutInButtons.SetActive(false); //Button disappears.
     }
     public void OnTriggerEnter(Collider other)
@@ -34,6 +37,18 @@ public class About_Teleport : MonoBehaviour
 
     public void loadscene()
     {
-        SceneManager.LoadScene("About");
+        StartCoroutine(PlayFadeAndLoadScene("About"));
+    }
+
+    private System.Collections.IEnumerator PlayFadeAndLoadScene(string sceneName)
+    {
+        animator.enabled = true;
+        animator.Play("Scene_Transition");
+
+        // Wait for the fade animation to finish
+        yield return new WaitForSeconds(fadeDuration);
+
+        // Load the next scene
+        SceneManager.LoadScene(sceneName);
     }
 }

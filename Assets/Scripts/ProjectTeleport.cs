@@ -13,6 +13,7 @@ public class ProjectTeleport : MonoBehaviour
     public enum teleportType { Entering , Exiting , ExpEntering, ExpExiting};
     public teleportType type;
     public Pause_Menu menus;
+    public About_Teleport aboutteleport;
     //public Camera cam;
     [Header("Teleportation Settings")]
     public Transform player;
@@ -243,7 +244,8 @@ public class ProjectTeleport : MonoBehaviour
     {
         menus.RemoveEverything();
         AboutInButton.SetActive(false);
-        SceneManager.LoadScene("About");
+        aboutteleport.loadscene();
+        //SceneManager.LoadScene("About");
         Debug.Log("The Scene Loaded");
     }
 }
