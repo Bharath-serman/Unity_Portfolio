@@ -6,7 +6,7 @@ public class MINI_Map : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 newposition = player.position;
-        newposition.y = transform.position.y;
+        newposition.y = transform.position.y;  //Need to be static in the 'Y' Direction.
         transform.position = newposition;
 
         transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);

@@ -11,9 +11,11 @@ public class Pause_Menu : MonoBehaviour
     public Button resumebutton;
     public Button teleportbutton;
     public Button quitbutton;
+    public Button optionsbutton;
     [Header("UI_Images")]
     public GameObject PauseImage;
     public GameObject Dropdownimage;
+    public GameObject Optionsimage;
     [Header("UI_GameObject")]
     public GameObject Panel;
 
@@ -25,10 +27,26 @@ public class Pause_Menu : MonoBehaviour
     {
         PauseImage.gameObject.SetActive(!isActive); //False.
         Dropdownimage.SetActive(!isActive);
+        Optionsimage.SetActive(!isActive);
     }
 
     public void EnableMenu()
     {
+
+        if (Optionsimage.activeSelf)
+        {
+            Optionsimage.SetActive(false);
+            PauseImage.SetActive(true);
+            return;
+        }
+        if (Dropdownimage.activeSelf)
+        {
+            Dropdownimage.SetActive(false);
+        }
+        if (PauseImage.activeSelf)
+        {
+            return;
+        }
         ShowMenu();
     }
     
@@ -38,7 +56,6 @@ public class Pause_Menu : MonoBehaviour
         {
             Debug.Log("Button not assigned");  //Shows Error.
         }
-
         //Show the menu
         PauseImage.gameObject.SetActive(isActive);
         Time.timeScale = 0f;
@@ -80,16 +97,24 @@ public class Pause_Menu : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && Ispressed)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Ispressed = !Ispressed;  //False.
-            ShowMenu();
-            Time.timeScale = 0f;  //Freeze the game once it is paused.
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && !Ispressed)
-        {
-            RemoveEverything();
-            Ispressed = true;
+            if (Optionsimage.activeSelf)
+            {
+                Optionsimage.SetActive(false);
+                PauseImage.SetActive(true);
+                return;
+            }
+            if (Ispressed)
+            {
+                Ispressed = false;
+                ShowMenu();
+            }
+            else
+            {
+                RemoveEverything();
+                Ispressed = true;
+            }
         }
     }
 
@@ -112,5 +137,18 @@ public class Pause_Menu : MonoBehaviour
         Dropdownimage.SetActive(false);
         //Resume the game.
         Time.timeScale = 1f;
+    }
+
+    public void openoptions()
+    {
+        //Enable the options.
+        PauseImage.SetActive(false);
+        Optionsimage.SetActive(true);
+    }
+
+    public void closeOptions()
+    {
+        Optionsimage.SetActive(false);
+        PauseImage.SetActive(true);
     }
 }

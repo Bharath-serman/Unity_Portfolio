@@ -10,9 +10,9 @@ public class Show_Panel : MonoBehaviour
     public PlayableDirector director;
     public GameObject AccessDeniedButton;
     private bool ButtonStatus = false;
-    public GameObject ExperiencePanels;  //For site scene's Experience.
+    [SerializeField] public GameObject ExperiencePanels;  //For site scene's Experience.
     private bool PanelStatus = false;
-    public Button closePanelbutton;
+   [SerializeField] public Button closePanelbutton;
     void Start()
     {
         BioPanel.SetActive(false);
