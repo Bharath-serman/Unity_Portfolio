@@ -52,7 +52,7 @@ This project helped me improve my skills in:
 ---
 
 ## Author
-**The Reader (Spidey)**  
+**Bharath serman R**  
  B.E. Computer Science | Unity Developer, UI Designer
   [bharathserman@gmail.com]
 
