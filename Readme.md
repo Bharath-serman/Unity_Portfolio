@@ -35,9 +35,8 @@ AND THIS IS STILL IN DEVELOPMENT.
 2. Click **Play** to explore the environment
 
 ## Screenshots
-Example:  
-![Home Scene]<img width="1361" height="590" alt="Home" src="https://github.com/user-attachments/assets/f3cefabb-1e69-4d0b-95c2-04470cf40a8c" />
-![Portfolio Scene]<img width="1366" height="591" alt="Initial" src="https://github.com/user-attachments/assets/96308887-9a5a-4d60-86f5-375e5e095954" />
+<img width="1361" height="590" alt="Home" src="https://github.com/user-attachments/assets/f3cefabb-1e69-4d0b-95c2-04470cf40a8c" />
+<img width="1366" height="591" alt="Initial" src="https://github.com/user-attachments/assets/96308887-9a5a-4d60-86f5-375e5e095954" />
 
 
 ---
