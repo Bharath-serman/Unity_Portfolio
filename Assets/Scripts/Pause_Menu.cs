@@ -1,4 +1,3 @@
-using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -105,6 +104,12 @@ public class Pause_Menu : MonoBehaviour
                 PauseImage.SetActive(true);
                 return;
             }
+            if (Dropdownimage.activeSelf)
+            {
+                Dropdownimage.SetActive(false);
+                PauseImage.SetActive(true);
+                return;
+            }
             if (Ispressed)
             {
                 Ispressed = false;
@@ -121,7 +126,7 @@ public class Pause_Menu : MonoBehaviour
     public void CloseDrawImage()
     {
         Dropdownimage.SetActive(false);
-        PauseImage.gameObject.SetActive(true);   
+        PauseImage.SetActive(true);   
     }
 
     public void quit()

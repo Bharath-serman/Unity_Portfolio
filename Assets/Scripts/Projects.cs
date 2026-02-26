@@ -10,41 +10,56 @@ public class Projects : MonoBehaviour
     public Button project4;  //Cassiora.
     public Button project5;  //Drive_Link.
     public Button TravelPlannerButton;  //Travel_Planner.
+    public Button project6;  //DieWithMe.
+    public Button project7;  //TheGreenVoid.
 
+    #region ProjectNavigationLogics
     public void navigate1()
     {
         //Opens the URL
         Application.OpenURL("https://github.com/Bharath-serman/AR_Portal");
-        Debug.Log("Opened URL-1");
+        //Debug.Log("Opened URL-1");
     }
 
     public void navigate2()
     {
         Application.OpenURL("https://github.com/Bharath-serman/VR_Builder_Sample_Game");
-        Debug.Log("Opened URL-2");
+        //Debug.Log("Opened URL-2");
     }
 
     public void navigate3()
     {
         Application.OpenURL("https://github.com/Bharath-serman/VR_BLACK_HOLE");
-        Debug.Log("Opened URL-3");
+        //Debug.Log("Opened URL-3");
     }
 
     public void navigate4()
     {
         Application.OpenURL("https://github.com/Bharath-serman/Cassiora");
-        Debug.Log("Opened URL-4");
+        //Debug.Log("Opened URL-4");
     }
 
     public void navigate5()
     {
         Application.OpenURL("https://drive.google.com/drive/folders/1vaEnhpUqaJqcC7a07x_cpO9LhhJ3VcbF?usp=sharing");
-        Debug.Log("Opened URL-5");
+        //Debug.Log("Opened URL-5");
     }
 
     public void navigate6()
     {
         Application.OpenURL("https://travelplanner.chennaimetrorail.org/");
-        Debug.Log("Opened URL-6");
+        //Debug.Log("Opened URL-6");
+    } 
+
+    public void navigate7()
+    {
+        Application.OpenURL("https://github.com/Bharath-serman/Die_With_Me");
+        //Debug.Log("Opened URL-7");
     }
+
+    public void navigate8()
+    {
+        Application.OpenURL("https://github.com/Bharath-serman/The_Green_Void");
+    }
+    #endregion
 }

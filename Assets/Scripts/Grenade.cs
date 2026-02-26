@@ -35,6 +35,7 @@ public class Grenade : MonoBehaviour
 
     }
 
+    #region ExplosionLogic
     void Explode()
     {
         Debug.LogError("Boom!");
@@ -55,11 +56,12 @@ public class Grenade : MonoBehaviour
             {
                 //add force
                 rb.AddExplosionForce(force, transform.position, radius);
-                
+
             }
         }
         //destroy the grenade
         Destroy(gameObject);
 
-    }
+    } 
+    #endregion
 }
