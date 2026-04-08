@@ -45,7 +45,7 @@ This project helped me improve my skills in:
 
 ## Author
 **Bharath serman R**  
- B.E. Computer Science | Unity Developer, UI Designer
+ Unity Developer | Full stack developer | Vibe Coder | CS Student.
   [bharathserman@gmail.com]
 
   ## Screenshots
