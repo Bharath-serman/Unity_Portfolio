@@ -3,7 +3,9 @@ using UnityEngine.UI;
 
 public class Projects : MonoBehaviour
 {
+    #region Project_Button_Inputs
     [Header("Project_URL_Buttons")]
+    [Tooltip("Assign the buttons for each project URL")]
     public Button project1;  //AR_portal.
     public Button project2;  //VR_Builder.
     public Button project3;  //VR Black_Hole.
@@ -12,6 +14,10 @@ public class Projects : MonoBehaviour
     public Button TravelPlannerButton;  //Travel_Planner.
     public Button project6;  //DieWithMe.
     public Button project7;  //TheGreenVoid.
+    public Button project8;  //Petal_Portfolio.
+    public Button project9;  //Musashi_Kana
+    #endregion
+
 
     #region ProjectNavigationLogics
     public void navigate1()
@@ -61,5 +67,15 @@ public class Projects : MonoBehaviour
     {
         Application.OpenURL("https://github.com/Bharath-serman/The_Green_Void");
     }
+
+    public void navigate9()
+    {
+        Application.OpenURL("https://bharath-petal-portfolio.vercel.app/");
+    }
+    public void navigate10()
+    {
+        Application.OpenURL("https://musashi-kana.vercel.app/");
+    }
+
     #endregion
 }

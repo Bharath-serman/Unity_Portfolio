@@ -22,11 +22,14 @@ public class Pause_Menu : MonoBehaviour
     private bool Ispressed = true;  //For Pause Window
     private bool ActivePanel = false;
 
+    public static Pause_Menu Instance;
+
     private void Start()
     {
         PauseImage.gameObject.SetActive(!isActive); //False.
         Dropdownimage.SetActive(!isActive);
         Optionsimage.SetActive(!isActive);
+        Instance = this;
     }
 
     public void EnableMenu()
